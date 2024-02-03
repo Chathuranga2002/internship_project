@@ -1,43 +1,28 @@
 import {Component} from "react";
 import logo from '../../../images/icon2.png'
 import {Link} from "react-router-dom";
+import {CreateUser} from "../../page/createUser/CreateUser";
+import {DeleteUser} from "../../page/deleteUser/DeleteUser";
+import {ListUsers} from "../../page/listUser/ListUsers";
+import {UserDetails} from "../../page/userDetails/UserDetails";
+import {UpdateUser} from "../../page/updeteUser/UpdateUser";
 export class Nav extends Component {
     render() {
         return (
 
-            <div className="p-6 bg-black flex justify-between pr-4 pl-10">
-
-                <div className="flex">
-                    <h1 className="text-2xl font-bold text-white">
-                        Rc World</h1>
-                    {/*<img className="h-[10px] w-[10px] ml-1 pt-1" src={logo}*/}
-                    {/*     alt=""/>*/}
-                </div>
-
+            <div className="p-6 bg-black flex justify-center pr-4 pl-10">
                 <ul className="list-none flex mt-1">
                     <li className="inline-block mr-4 text-[13] text-white">
-                        <Link to="/">Home</Link></li>
+                        <Link to="/">CreateUser</Link></li>
                     <li className="inline-block mr-4 text-[13] text-white">
-                        <Link to="/shop">Shop</Link></li>
+                        <Link to="/UpdateUser">UpdateUser</Link></li>
                     <li className="inline-block mr-4 text-[13] text-white">
-                        <Link to="/contact">Contact</Link></li>
+                        <Link to="/ListUsers">ListUsers</Link></li>
                     <li className="inline-block mr-4 text-[13] text-white">
-                        <Link to="/cart">Cart</Link></li>
+                        <Link to="/GetUserDetails">UserDetails</Link></li>
+                    <li className="inline-block mr-4 text-[13] text-white">
+                        <Link to="/DeleteUser">DeleteUser</Link></li>
                 </ul>
-
-
-                {/*<button className="text-[8px] text-[#e6f0e6]*/}
-                {/*                   bg-secondary pl-3 pr-3*/}
-                {/*                   hover:text-tertiary"*/}
-                {/*>*/}
-                {/*    <Link to={"/login"}> Sign In</Link>*/}
-                {/*    /!*onClick={this.onButtonClick}*!/*/}
-                {/*</button>*/}
-                <button
-                    className="bg-red-500 hover:bg-white hover:text-black text-white text-sm font-bold py-1 px-2
-                     rounded-full transition duration-300 ease-in-out">
-                    <Link to="/login">Sign In</Link>
-                </button>
             </div>
         );
     }

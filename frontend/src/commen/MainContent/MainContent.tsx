@@ -16,7 +16,7 @@ export class MainContent extends Component {
                     <Route path={"/"} Component={CreateUser}></Route>
                     <Route path={"/DeleteUser"} Component={DeleteUser}></Route>
                     <Route path={"/ListUsers"} Component={ListUsers}></Route>
-                    <Route path={"/GetUserDetails "} Component={UserDetails}></Route>
+                    <Route path={"/GetUserDetails"} Component={UserDetails}></Route>
                     <Route path={"/UpdateUser"}  Component={UpdateUser}></Route>
                 </Routes>
 
