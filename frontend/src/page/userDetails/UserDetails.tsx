@@ -1,0 +1,9 @@
+import {Component} from "react";
+
+export class UserDetails extends Component {
+    render() {
+        return (
+            <></>
+        );
+    }
+}
